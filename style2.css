@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(59, 131, 176), rgb(0, 0, 0));
+}
+
+.box {
+    width: 110vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    padding: 1px 30px;
+    border-radius: 7px;
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 20px 25px -15px rgba(56, 56, 58, 0.15);
+}
+
+
+#gradient-box {
+    height: 300px;
+    width: 250px;
+    background-image: linear-gradient(45deg,  rgb(11, 10, 10), rgb(157, 96, 169));
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 5px 5px 4px #000000;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    color: rgb(46, 39, 45);
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+input {
+    width: 60px;
+    height: 25px;
+    background-color: #000000;
+    border-radius: 18px;
+    border: none;
+}
+
+#choose, #type {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h3, h4 {
+    color: dimgrey;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color {
+    margin: 50px;
+    width: 50%;
+}
+
+#type-grad {
+    width: 46%;
+    height: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.07);
+    border: 2px solid #ff5f6d;
+    background: linear-gradient(to right, white 80%, #FF5F60 20%);
+    align-items: center;
+}
+
+option {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+button {
+    background-color: #2e647c;
+    min-width: 40%;
+    padding: 10px 0;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 2.6vmin;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    h1 {
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .gradient-box, .color {
+        width: 100%;
+        float: left;
+    }
+
+    .gradient-box {
+        width: 160px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-content: flex-end;
+    }
+}
